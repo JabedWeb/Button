@@ -1,0 +1,183 @@
+
+
+
+
+.custom-btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1em;
+    letter-spacing: .16em;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+    padding: 20px 27px;
+    cursor: pointer
+}
+
+.custom-btn:not(.custom-btn-minimal) .custom-btn-text {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-simple {
+    padding: 0 !important;
+    color: #26ccca;
+    background-color: transparent;
+    border: 0;
+    vertical-align: middle
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-simple:not(.custom-btn-custom-hover-color):hover {
+    color: #888 !important
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-simple:not(.custom-btn-custom-hover-bg):hover {
+    background-color: transparent !important
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-simple:not(.custom-btn-custom-border-hover):hover {
+    border-color: transparent !important
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-solid {
+    color: #fff;
+    background-color: #26ccca;
+    border: 2px solid transparent
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-solid:not(.custom-btn-with-cover-fx):not(.custom-btn-custom-hover-color):hover {
+    color: #fff !important
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-solid:not(.custom-btn-with-cover-fx):not(.custom-btn-custom-hover-bg):hover {
+    background-color: #0d0d0d !important
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-solid:not(.custom-btn-with-cover-fx):not(.custom-btn-custom-border-hover):hover {
+    border-color: #0d0d0d !important
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-outline {
+    color: #26ccca;
+    background-color: transparent;
+    border: 2px solid #26ccca
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-outline:not(.custom-btn-with-cover-fx):not(.custom-btn-custom-hover-color):hover {
+    color: #fff !important
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-outline:not(.custom-btn-with-cover-fx):not(.custom-btn-custom-hover-bg):hover {
+    background-color: #26ccca !important
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-outline:not(.custom-btn-with-cover-fx):not(.custom-btn-custom-border-hover):hover {
+    border-color: #26ccca !important
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-plus-sign .custom-btn-text {
+    padding-left: 25px
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-plus-sign .custom-btn-text:before {
+    content: '\f067';
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 70%;
+    left: 0;
+    line-height: inherit;
+    position: absolute;
+    top: 1px;
+    vertical-align: middle
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-with-cover-fx {
+    text-align: center
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-with-cover-fx .custom-btn-text:not(.custom-btn-cover-text) {
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.23, .71, .55, .99), opacity .15s;
+    transition: transform .2s cubic-bezier(.23, .71, .55, .99), opacity .15s
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-with-cover-fx .custom-btn-cover {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -2px;
+    left: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    pointer-events: none
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-with-cover-fx .custom-btn-cover .custom-btn-cover-text {
+    opacity: 0;
+    color: #fff;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    -moz-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0);
+    -webkit-transition: all 0s .2s;
+    -moz-transition: all 0s .2s;
+    transition: all 0s .2s;
+    margin-top: 2px;
+    z-index: 20
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-with-cover-fx .custom-btn-cover .custom-btn-cover-bgrnd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    background-color: #0d0d0d;
+    border: 2px solid #0d0d0d;
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform .35s cubic-bezier(.86, 0, .07, 1);
+    -moz-transition: -moz-transform .35s cubic-bezier(.86, 0, .07, 1);
+    transition: transform .35s cubic-bezier(.86, 0, .07, 1);
+    will-change: transform
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-with-cover-fx:hover .custom-btn-cover-bgrnd {
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition: -webkit-transform .5s cubic-bezier(.86, 0, .07, 1);
+    -moz-transition: -moz-transform .5s cubic-bezier(.86, 0, .07, 1);
+    transition: transform .5s cubic-bezier(.86, 0, .07, 1)
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-with-cover-fx:hover .custom-btn-text:not(.custom-btn-cover-text) {
+    opacity: 0;
+    -webkit-transform: translate3d(15px, 0, 0);
+    -moz-transform: translate3d(15px, 0, 0);
+    transform: translate3d(15px, 0, 0)
+}
+
+.custom-btn:not(.custom-btn-minimal).custom-btn-with-cover-fx:hover .custom-btn-cover-text {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform .4s cubic-bezier(.28, 1.04, .49, .9) .2s, opacity .6s .15s;
+    transition: transform .4s cubic-bezier(.28, 1.04, .49, .9) .2s, opacity .6s .15s
+}
